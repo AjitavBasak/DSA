@@ -1,0 +1,40 @@
+Problem Description
+Your team participated in a coding competition named Code To Win. You are good at coding and your teammate is good at maths. Together, you form a great team that has the potential to win this competition. The first question is as follows.
+
+You are given a rectangular matrix of size n x m and also an integer size. Calculate the sum of all numbers within each size × size submatrix. Determine the maximum of all these sums. Let that be maxSum. From all size × size submatrices having the sum of maxSum, find all distinct numbers that appear in at least one of them. Return the sum of these distinct numbers.
+
+Input format
+First line contains two space separated integers n and m.
+Next n lines contain m integers each representing the matrix.
+The next line contains a single integer size.
+
+Output format
+Return a single integer.
+
+Sample Input 1
+4 5
+1 0 1 5 6
+3 3 0 3 3
+2 9 2 1 2
+0 2 4 2 0
+2
+
+Sample Output 1
+29
+
+Explanation
+Considering all the 2 × 2 square submatrices in the matrix, there are 3 of them with the maximum sum of 17.
+5 6
+3 3
+Total sum = 17
+3 3
+2 9
+Total sum = 17
+9 2
+2 4
+Total sum = 17
+Among these 3 submatrices, which each have the maximum sum, the only distinct numbers are 2, 3, 4, 5, 6, and 9. So the answer is 2 + 3 + 4 + 5 + 6 + 9 = 29.
+
+Constraints
+1 <= n, m <= 100
+1<= size <= min(n, m)
