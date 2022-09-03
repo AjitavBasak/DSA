@@ -1,0 +1,50 @@
+Problem Description
+The planet named GiantX (the citizens of this planet are very very tall, some people can be upto 10^9 cm tall) is on the verge of a war with a different planet. To prepare for this, different army battalions are now recruiting warriors to save the planet. Every battalion has a different minimum height criteria for selecting warriors. There are a total of N people who want to join the army and we are given their heights. There are Q battalions and we are given minimum height requirements for each battalion. For each battalion print how many people are eligible to join.
+
+Input format
+First line contains two space separated integers N and Q
+Second line contains N space separated integers A[i] representing the heights of N people.
+Next Q lines contain one integer (x[j]) each, representing the minimum height required to join the Qth battalion.
+
+Output format
+Print Q lines.
+The jth line should contain the number of people who are eligible to join the jth battalion.
+
+Sample Input 1
+3 1
+100 160 130
+120
+
+Sample Output 1
+2
+
+Explanation 1
+There are 3 people with heights 100, 160 and 130. There is only one battalion with the minimum height required to join the battalion being 120. There are two such people (height > 120). Thus, the required answer is 2.
+
+Sample Input 2
+5 5
+1 2 3 4 5
+6
+5
+4
+3
+2
+
+Sample Output 2
+0
+1
+2
+3
+4
+
+Explanation 2
+The minimum height required to join the first battalion is 6. Not a single person has a height of at least 6. Thus the answer is 0.
+The minimum height required to join the second battalion is 5. Only the fifth person has a height of at least 5. Thus the answer is 1.
+The minimum height required to join the third battalion is 4. The fifth and the fourth person has a height of at least 4. Thus the answer is 2.
+The minimum height required to join the fourth battalion is 3. Third, fourth and the fifth person has a height of at least 3. Thus the answer is 3.
+The minimum height required to join the fifth battalion is 2. Second, third, fourth and the fifth person has a height of at least 5. Thus the answer is 4.
+
+Constraints
+1 <= N, Q <= 2*10^5
+1 <= A[i] <= 10^9
+1 <= x[j] <= 10^9
