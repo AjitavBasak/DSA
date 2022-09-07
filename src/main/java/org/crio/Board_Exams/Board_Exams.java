@@ -1,6 +1,6 @@
 package org.crio.Board_Exams;
 import java.util.*;
-public class Board_Exams {
+ class Board_Exams {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
